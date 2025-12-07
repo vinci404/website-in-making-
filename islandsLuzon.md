@@ -89,6 +89,200 @@ buttons still not attractive
 
 ```
 
-``` css
 
+
+
+``` css
+.islabg {
+    background: -webkit-linear-gradient(to bottom, rgba(7, 7, 7, 0.762), transparent), url('download.jpg');
+    background: linear-gradient(to bottom, rgba(8, 8, 8, 0.766), transparent), url('download.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 500px;
+    width: auto;
+}
+
+.islaupper {
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+
+}
+
+.fa-solid-fa-paw {
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    margin: 1px;
+    padding: 2px;
+}
+
+section .upper i .upper .fa-solid-fa-paw {
+    flex-direction: row;
+    display: inline-flex;
+    margin: 1px;
+    padding: 2px;
+}
+
+nav {
+    background-color: transparent;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 2;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: rgba(131, 2, 114, 0.873);
+    border-radius: 10%;
+    padding: 5px;
+    margin: 5px;
+    scale: 1;
+}
+
+.island-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-dropdown {
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgb(242, 2, 234);
+    padding: 1rem;
+    position: relative;
+}
+
+.dropdown {
+    font-size: 15px;
+    background: rgb(96, 1, 88);
+    color: white;
+    width: 200px;
+    padding: 10px;
+    position: relative;
+    top: 20%;
+    right: 20;
+    box-shadow: 0 4px 8px rgba(254, 254, 254, 0.2);
+}
+
+.descbox {
+    background-color: rgb(122, 65, 117);
+    width: 7%;
+    padding: 10px;
+    border-radius: 30px;
+    height: 300px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+}
+
+nav .btnn {
+    display: inline;
+    justify-content: center;
+    background-color: transparent;
+    margin: 0px;
+    padding: 5px;
+}
+
+nav span button {
+    background-color: transparent;
+    border: none;
+}
+
+nav span button a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: rgba(135, 3, 102, 0.611);
+    color: white;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+nav span button a:hover {
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+}
+
+.carousel {
+    margin: 10px;
+    height: 200px;
+    width: 10%;
+    margin: 20px 0 0 0;
+    padding: 1%;
+    position: relative;
+    display: flex;
+    overflow-x: auto;
+    gap: 1em;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    animation: spin 30s infinite linear;
+
+}
+
+.card {
+    flex: 0 0 200px;
+    height: 200px;
+    padding: 1em;
+    background: transparent;
+    border-radius: 10px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+
+@keyframes spin {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+        /* Changed from -100% to -50% for smooth loop */
+    }
+}
+
+.card img {
+    object-fit: cover;
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+
+}
 ```
