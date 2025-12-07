@@ -1,6 +1,6 @@
 🎀
 bro it's hard
-
+``` html
 <!DOCTYPE html>
 <html>
   <head>
@@ -54,7 +54,7 @@ bro it's hard
   </body>
 </html>
 
-
+``` css
 .backg {
     background: -webkit-linear-gradient(to bottom, rgba(51, 50, 50, 0.762), transparent), url('download.jpg');
     background: linear-gradient(to bottom, rgba(54, 53, 53, 0.766), transparent), url('download.jpg');
