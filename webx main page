@@ -1,2 +1,179 @@
 🎀
 bro it's hard
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>fifth attempt</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="tryy3.css" />
+  </head>
+  <body class="backg">
+    <!--up most-->
+    <section class="upper">
+      <i class="fa-solid-fa-paw"> <img src="paw-solid-full.svg" />POSA</i>
+    </section>
+    <nav>
+      <!--upper navi-->
+      <ul>
+        <li><a href="islandsLuzon.html">Islands</a></li>
+        <li><a href="tryy2.html">Discover</a></li>
+        <li><a href="tryy1.html">Experience</a></li>
+      </ul>
+    </nav>
+    <!--mid part-->
+    <div class="wilkam">Journey to the</div>
+    <div class="pilipinas">Philippines</div>
+    <div class="desc">
+      What is Philippines famous for? The Southeast Asian archipelago, a region
+      that consists of over 7,000 islands, has been seen to be one of the travel
+      destinations that aesthetically provides wonders to travellers. This has
+      made the place unique in the region, together with its clean beaches, wide
+      wildlife, rich cultural heritage, and amiable locals. The secret behind
+      this country being a favourite among millions of tourists every year lies
+      in World Pinoy Flights, be it in the non-stop energy capital or doing an
+      island-hopping expedition to far-off tropical isles. The Philippine
+      coastline boasts some of the most amazing beach destinations in the world.
+      Boracay has bright white sand with crystal clear waters, whereas Palawan
+      has towering limestone formations emerging out of lagoons of emerald
+      colour. Siargao also appeals to surfers all over the world, and the
+      Chocolate Hills are geological features that can be found only in Bohol,
+      known for being found on land.
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <center>
+      <div class="lower">
+        <button><a href="#">LEARN MORE</a></button>
+        <button><a href="#">BOOK NOW</a></button>
+      </div>
+    </center>
+  </body>
+</html>
+
+
+.backg {
+    background: -webkit-linear-gradient(to bottom, rgba(51, 50, 50, 0.762), transparent), url('download.jpg');
+    background: linear-gradient(to bottom, rgba(54, 53, 53, 0.766), transparent), url('download.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 500px;
+    width: auto;
+}
+
+.upper {
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+
+}
+
+.fa-solid-fa-paw {
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    margin: 1px;
+    padding: 2px;
+}
+
+section .upper i .upper .fa-solid-fa-paw {
+    flex-direction: row;
+    display: inline-flex;
+    margin: 1px;
+    padding: 2px;
+}
+
+nav {
+    background-color: transparent;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 2;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: rgba(131, 2, 114, 0.873);
+    border-radius: 10%;
+    padding: 5px;
+    margin: 5px;
+    scale: 1;
+}
+
+.wilkam {
+    font-size: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 0px;
+    color: white
+}
+
+.pilipinas {
+    font-size: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 0px;
+    color: white
+}
+
+.desc {
+
+    justify-content: center;
+    padding: 10px;
+    margin: 0px;
+    color: rgb(54, 2, 40);
+}
+
+.lower {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 5px;
+    background-color: transparent;
+
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+button a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: rgb(118, 4, 89);
+    color: white;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+button a:hover {
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+}
