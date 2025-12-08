@@ -15,9 +15,9 @@ buttons still not attractive
     </section>
     <nav>
       <ul>
-        <li><a href="tryy1.html">Islands</a></li>
-        <li><a href="tryy2.html">Discover</a></li>
-        <li><a href="tryy1.html">Experience</a></li>
+        <li><a href="islandsLuzon.html">Islands</a></li>
+        <li><a href="disccover1.html">Discover</a></li>
+        <li><a href="expi.html">Experience</a></li>
       </ul>
     </nav>
     <br />
@@ -26,24 +26,41 @@ buttons still not attractive
       <details class="dropdown navii">
         <!--how can i make this place to other end???? justify-content: flex-end dont work-->
         <summary>Choose Island</summary>
-        <p>Luzon</p>
-        <p>Visayas</p>
-        <p>Mindanao</p>
+        <p><a href="islandsLuzon.html">Luzon</a></p>
+        <p><a href="islandsVisayas.html">Visayas</a></p>
+        <p><a href="islandsMinda.html">Mindanao</a></p>
       </details>
-    
-  
-    <span class="btnn">
-      <button><a href="#">LEARN MORE</a></button>
-      <button><a href="#">BOOK NOW</a></button>
-    </span>
-  </nav>
+
+      <span class="btnn">
+        <button><a href="moree.html">WHAT'S MORE</a></button>
+        <button><a href="map.html">MAPS</a></button>
+      </span>
+    </nav>
 
     <div class="main-container">
       <!-- decsription box -->
       <div class="descbox">
         <h2>Luzon</h2>
-        <p>It is the largest and most populous island in the Philippines. Located in the northern portion of the Philippine archipelago, it is the economic and political center of the nation, being home to the country's capital city, Manila, as well as Quezon City, the country's most populous city. With a population of 64.3 million as of 2024, it contains 55% of the country's total population and is the 4th most populous island in the world. It is the 15th largest island in the world by land area.</p>
+        <p>
+          Located in the northern portion of the Philippine archipelago, it is
+          the economic and political center of the nation, being home to the
+          country's capital city, Manila, as well as Quezon City, the country's
+          most populous city. With a population of 64.3 million as of 2024, it
+          contains 55% of the country's total population and is the 4th most
+          populous island in the world. It is the 15th largest island in the
+          world by land area. Luzon, largest and most important island of the
+          Philippines. It is the site of Manila, the nation’s capital and major
+          metropolis, and of Quezon City. Located on the northern part of the
+          Philippine archipelago, it is bounded by the Philippine Sea (east),
+          Sibuyan Sea (south), and the South China Sea (west). To the north, the
+          Luzon Strait separates Luzon from Taiwan. Most of the island, a
+          roughly rectangular area, lies north of Manila in a north-south
+          orientation, while south of Manila are two peninsulas, Batangas and
+          Bicol, which extend south and southeast, giving Luzon its irregular
+          shape.
+        </p>
       </div>
+    </div>
 
     <div class="carousel">
       <div class="group">
@@ -83,9 +100,12 @@ buttons still not attractive
     </div>
     <!--wow the carouselll actually workssss, thanks to that one guy on yt, finally yt did good something to me-->
     <!--now i have to figure out how can i make the image fit and move the carousel on the right part a bit-->
-
+    <div class="baba">
+      <button><a href="tryy3.html">Back</a></button>
+    </div>
   </body>
 </html>
+
 
 ```
 
@@ -165,7 +185,6 @@ nav ul li a:hover {
 }
 
 .nav-dropdown {
-    display: flex;
     justify-content: flex-start;
     background-color: rgb(242, 2, 234);
     padding: 1rem;
@@ -178,15 +197,19 @@ nav ul li a:hover {
     color: white;
     width: 200px;
     padding: 10px;
-    position: relative;
     top: 20%;
     right: 20;
     box-shadow: 0 4px 8px rgba(254, 254, 254, 0.2);
 }
 
+nav details a {
+    color: white;
+    text-decoration: none;
+}
+
 .descbox {
     background-color: rgb(122, 65, 117);
-    width: 7%;
+    width: 40%;
     padding: 10px;
     border-radius: 30px;
     height: 300px;
@@ -194,10 +217,10 @@ nav ul li a:hover {
 
 .main-container {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 10px;
     color: rgb(255, 255, 255);
-    position: absolute;
+    position: relative;
 }
 
 nav .btnn {
@@ -229,15 +252,15 @@ nav span button a:hover {
 }
 
 .carousel {
-    margin: 10px;
-    height: 200px;
-    width: 10%;
+
+
     margin: 20px 0 0 0;
     padding: 1%;
     position: relative;
     display: flex;
     overflow-x: auto;
     gap: 1em;
+    display: flex;
 }
 
 .carousel::-webkit-scrollbar {
@@ -255,7 +278,7 @@ nav span button a:hover {
 
 .card {
     flex: 0 0 200px;
-    height: 200px;
+
     padding: 1em;
     background: transparent;
     border-radius: 10px;
@@ -274,15 +297,48 @@ nav span button a:hover {
 
     to {
         transform: translateX(-100%);
-        /* Changed from -100% to -50% for smooth loop */
     }
 }
 
 .card img {
     object-fit: cover;
     object-fit: contain;
+    height: 200px;
+    width: 10%;
     height: 100%;
     width: 100%;
+}
 
+.baba {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    gap: 50px;
+    padding: 10px;
+    background-color: transparent;
+    transform: translateX(-50%);
+
+}
+
+.baba button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+button a {
+    text-decoration: none;
+    display: flex;
+    background-color: rgb(118, 4, 89);
+    color: white;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+button a:hover {
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
 }
 ```
